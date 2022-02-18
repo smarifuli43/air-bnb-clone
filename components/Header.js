@@ -6,12 +6,11 @@ import {
   MenuIcon,
   UserCircleIcon,
   SearchIcon,
-  UsersIcon,
 } from '@heroicons/react/solid'
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-3 bg-white p-5 shadow-md md:px-10">
+    <header className="sticky top-0 z-50 grid grid-cols-3 bg-white p-5 shadow-md md:px-10 ">
       {/* left */}
       <div className="relative my-auto flex h-10 cursor-pointer items-center ">
         <Image
