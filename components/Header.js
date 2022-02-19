@@ -45,7 +45,7 @@ const Header = ({ placeholder }) => {
     })
   }
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-3 bg-white p-5 shadow-md md:px-10 ">
+    <header className="sticky top-0 z-50 grid  grid-cols-3 bg-white p-5 shadow-md md:px-10 ">
       {/* left */}
       <div
         className="relative my-auto flex h-10 cursor-pointer items-center "
@@ -63,7 +63,7 @@ const Header = ({ placeholder }) => {
         <input
           type="text"
           placeholder={placeholder || 'Start your search'}
-          className="ps-3 flex-grow bg-transparent p-1 text-gray-600 placeholder-gray-400 outline-none"
+          className="ps-3 flex-grow bg-transparent p-1 text-gray-600 placeholder-gray-600 outline-none"
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
         />
