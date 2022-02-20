@@ -74,7 +74,6 @@ const Header = ({ placeholder }) => {
         <p className="hidden cursor-pointer md:inline">Become a host</p>
         <GlobeAltIcon className="h-6 cursor-pointer" />
         <div
-          onC
           className="flex cursor-pointer items-center space-x-2 rounded-full border-2 p-2"
         >
           <MenuIcon className="h-6" />
@@ -112,6 +111,7 @@ const Header = ({ placeholder }) => {
           </div>
         </div>
       )}
+
     </header>
   )
 }

@@ -2,14 +2,19 @@ import { HeartIcon } from '@heroicons/react/outline'
 import { StarIcon } from '@heroicons/react/solid'
 import Image from 'next/image'
 import React from 'react'
+import { getCenter } from 'geolib/es/getCenter'
 
 const InfoCard = (props) => {
-  console.log(props.item)
   const { img, location, title, description, star, price, total } = props.item
   return (
-    <div className="flex transform cursor-pointer border-b py-7 pl-2 pr-4 transition duration-200 hover:opacity-80 hover:shadow-lg first:border-t">
+    <div className="flex transform cursor-pointer border-b py-7 pl-2 pr-4 transition duration-200 first:border-t hover:opacity-80 hover:shadow-lg">
       <div className="relative h-24 w-40 flex-shrink-0 md:h-52 md:w-80">
-        <Image src={img} layout="fill" objectFit="cover" className=' rounded-xl' />
+        <Image
+          src={img}
+          layout="fill"
+          objectFit="cover"
+          className=" rounded-xl"
+        />
       </div>
       <div className=" flex flex-grow flex-col pl-5">
         <div className="flex justify-between">
